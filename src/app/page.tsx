@@ -945,8 +945,8 @@ export default function Quiz() {
                     fontFamily: 'Inter, serif',
                     fontSize: '15px',
                     background: isSelected
-                      ? 'linear-gradient(90deg, #C6E9F7 0%, #E5F8FF 100%)'
-                      : 'rgba(255, 255, 255, 0.8)',
+                      ? 'linear-gradient(90deg, rgba(198,233,247,1) 0%, rgba(229,248,255,1) 100%)'
+                      : 'linear-gradient(90deg, rgba(198,233,247,0.1) 0%, rgba(229,248,255,0.1) 100%)',
                     border: '1px solid #96E5FF',
                     color: '#1e293b',
                     cursor: 'pointer'
@@ -954,12 +954,12 @@ export default function Quiz() {
 
                   onMouseEnter={(e) => {
                     if (!isSelected) {
-                      e.currentTarget.style.background = 'linear-gradient(90deg, rgba(198,233,247,0.5) 0%, rgba(229,248,255,0.5) 100%)';
+                      e.currentTarget.style.background = 'linear-gradient(90deg, rgba(198,233,247,0.6) 0%, rgba(229,248,255,0.6) 100%)';
                     }
                   }}
                   onMouseLeave={(e) => {
                     if (!isSelected) {
-                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.8)';
+                      e.currentTarget.style.background = 'linear-gradient(90deg, rgba(198,233,247,0.1) 0%, rgba(229,248,255,0.1) 100%)';
                     }
                   }}
                 >
